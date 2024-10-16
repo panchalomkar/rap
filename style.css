@@ -832,15 +832,19 @@ a.pro {
 
 .Feautes .card {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
   position: relative;
   padding: 10px 20px;
-  border: 1px solid darkblue;
-  border-radius: 10px;
-  background: #ec9707;
+  border: none;
+  border-radius: unset;
   position: relative;
   padding: 10px 20px;
-  min-height: 383px;
+  min-height: 225px;
   margin-bottom: 10px;
+  box-shadow: 1px 13px 17px -2px #c7c7c7eb;
 
   .card-body {
     padding: 0rem !important;
@@ -862,7 +866,7 @@ a.pro {
   position: absolute;
   left: 50%;
   margin-left: -50px;
-  top: 0;
+  top: -50px;
   height: 100px;
   width: 100px;
   line-height: 100px;
@@ -880,7 +884,6 @@ a.pro {
   border-color: transparent;
 }
 .Feautes .single-features h3 {
-  padding-top: 105px;
   color: #2c2d3f;
   font-weight: 600;
   font-size: 21px;
@@ -1724,7 +1727,7 @@ a.pro {
 }
 .client_t {
   color: white;
-  z-index: 999;
+  z-index: inherit;
   position: relative;
   bottom: 48px;
   font-size: 20px;
@@ -5460,7 +5463,8 @@ corporate */
   }
 }
 /* virtual reality page */
-#virtual,#plugin {
+#virtual,
+#plugin {
   .container {
     display: flex;
     width: 90%;
